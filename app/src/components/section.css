@@ -1,0 +1,11 @@
+.section {
+  height: 500px;
+  width: 500px;
+  border: 1px solid grey;
+  margin: 5px;
+  box-shadow: 5px 2px 2px grey;
+}
+
+.section__label {
+  padding: 5px;
+}

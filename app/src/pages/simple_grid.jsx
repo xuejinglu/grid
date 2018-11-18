@@ -2,8 +2,6 @@ import Grid from '../components/grid.jsx';
 import React, { Component } from 'react';
 import { rowData } from '../constants/row_data';
 
-const DEFAULT_CLASSNAME = 'grid-page';
-
 class SimpleGrid extends Component {
   static displayName = 'SimpleGrid';
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
+import './section.css';
 
 const DEFAULT_CLASSNAME = 'section';
 
@@ -13,7 +14,8 @@ class Section extends Component {
 
   render() {
     return (
-      <div className={`${DEFAULT_CLASSNAME}__section`}>
+      <div className={DEFAULT_CLASSNAME}>
+        <div className={`${DEFAULT_CLASSNAME}__label`}>{this.props.label}</div>
         {this.props.children}
       </div>
     );
