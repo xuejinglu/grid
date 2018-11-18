@@ -1,20 +1,20 @@
-import './External__AgGrid.css';
-import './External__AgGrid--ThemeMaterial.css';
+import 'ag-grid-community/dist/styles/ag-grid.css';
+import 'ag-grid-community/dist/styles/ag-theme-material.css';
 import React from 'react';
+import PropTypes from 'prop-types'
 import {AgGridReact} from 'ag-grid-react';
-import ImmutablePropTypes from 'react-immutable-proptypes';
 
 const DEFAULT_CLASSNAME = 'grid';
 
-class Grid extends React.Component {
+export default class Grid extends React.Component {
   static displayName = 'Grid';
   static propTypes = {
-    columnDefs: ImmutablePropTypes.list.isRequired,
-    page: React.PropTypes.number,
-    pageSize: React.PropTypes.number,
-    pagination: React.PropTypes.bool,
-    rowModelType: React.PropTypes.string,
-    rowData: ImmutablePropTypes.list,
+    columnDefs: PropTypes.array,
+    page: PropTypes.number,
+    pageSize: PropTypes.number,
+    pagination: PropTypes.bool,
+    rowModelType: PropTypes.string,
+    rowData: PropTypes.array,
   };
 
   constructor(props) {
